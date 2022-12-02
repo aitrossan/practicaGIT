@@ -31,11 +31,12 @@ namespace WindowsForm
         {
             this.lbl2 = new System.Windows.Forms.Label();
             this.txtPrecio = new System.Windows.Forms.TextBox();
-            this.cbUrgente = new System.Windows.Forms.CheckBox();
             this.txtTelegrama = new System.Windows.Forms.RichTextBox();
             this.btn1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblText1 = new System.Windows.Forms.Label();
+            this.Urgente = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lbl2
@@ -53,16 +54,6 @@ namespace WindowsForm
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(124, 20);
             this.txtPrecio.TabIndex = 25;
-            // 
-            // cbUrgente
-            // 
-            this.cbUrgente.AutoSize = true;
-            this.cbUrgente.Location = new System.Drawing.Point(300, 325);
-            this.cbUrgente.Name = "cbUrgente";
-            this.cbUrgente.Size = new System.Drawing.Size(70, 17);
-            this.cbUrgente.TabIndex = 24;
-            this.cbUrgente.Text = "Urgente?";
-            this.cbUrgente.UseVisualStyleBackColor = true;
             // 
             // txtTelegrama
             // 
@@ -101,14 +92,35 @@ namespace WindowsForm
             this.lblText1.TabIndex = 20;
             this.lblText1.Text = "Texto:";
             // 
+            // Urgente
+            // 
+            this.Urgente.Cursor = System.Windows.Forms.Cursors.PanSE;
+            this.Urgente.Location = new System.Drawing.Point(300, 325);
+            this.Urgente.Name = "Urgente";
+            this.Urgente.Size = new System.Drawing.Size(85, 17);
+            this.Urgente.TabIndex = 27;
+            this.Urgente.Text = "Urgente";
+            this.Urgente.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.Cursor = System.Windows.Forms.Cursors.PanSE;
+            this.radioButton1.Location = new System.Drawing.Point(397, 325);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 28;
+            this.radioButton1.Text = "Ordinario";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 465);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.Urgente);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.txtPrecio);
-            this.Controls.Add(this.cbUrgente);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.label1);
@@ -124,11 +136,12 @@ namespace WindowsForm
 
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.TextBox txtPrecio;
-        private System.Windows.Forms.CheckBox cbUrgente;
         private System.Windows.Forms.RichTextBox txtTelegrama;
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblText1;
+        private System.Windows.Forms.RadioButton Urgente;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
 

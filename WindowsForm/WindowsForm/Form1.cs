@@ -26,7 +26,7 @@ namespace WindowsForm
             //Leo el telegrama
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (cbUrgente.Checked)
+            if (Urgente.Checked)
                 tipoTelegrama = 'u';
             //Obtengo el número de palabras que forma el telegrama
             numPalabras = textoTelegrama.Length;
@@ -46,6 +46,11 @@ namespace WindowsForm
             else
                 coste = 0;
             txtPrecio.Text = coste.ToString() + " euros";
+        }
+
+        private void Ordinario_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
